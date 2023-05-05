@@ -5,35 +5,42 @@
              Title="Rotina"
              BackgroundColor="#BFEFFF">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Clicked="OnItemAdded" Text="+">
-            <ToolbarItem.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android,UWP" Value="plus.png" />
-                </OnPlatform>
-            </ToolbarItem.IconImageSource>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
-
-    <ListView
-        x:Name="listView"
-        Margin="20"
-        ItemSelected="OnListItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <ListView x:Name="listView"
+                  ItemSelected="OnListItemSelected"
+                  Grid.ColumnSpan="1"
+                  Grid.RowSpan="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
                         Margin="20,0,0,0"
                         HorizontalOptions="FillAndExpand"
                         Orientation="Horizontal">
-                        <Label HorizontalOptions="StartAndExpand" Text="{Binding Titulo}" />
-                        <Image
+                            <Label HorizontalOptions="StartAndExpand" Text="{Binding Titulo}" />
+                            <Image
                             HorizontalOptions="End"
                             IsVisible="{Binding Feito}"
                             Source="check.png" />
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="+" BackgroundColor="Black"
+                Grid.Column="1"
+                Grid.Row="1"
+                Clicked="OnItemAdded"
+                TextColor="White"/>
+    </Grid>
 </ContentPage>

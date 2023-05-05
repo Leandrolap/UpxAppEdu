@@ -10,7 +10,7 @@
     Shell.TabBarBackgroundColor="#6495ED">
 
     <Tab Title="Rotinas">
-        <view:Rotina/>
+        <ShellContent ContentTemplate="{DataTemplate view:Rotina}" />
     </Tab>
 
     <Tab Title="Aprendizagem">
