@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="UpxAppEdu.View.TelaInicial"
+             BackgroundColor="#BFEFFF">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnItemConfiguracoes" Text="Configurações">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="Android,UWP" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <Grid RowSpacing="15"
+              ColumnSpacing="10"
+              Margin="20">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <VerticalStackLayout Grid.Column="0"
+                                 Grid.Row="0">
+                
+                <ImageButton Source="food.png"
+                             Clicked="OnClikedFood"/>
+
+                <Label Text="Comer"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="0">
+                
+                <ImageButton Source="phone.png"/>
+
+                <Label Text="Ligar"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="1">
+                
+                <ImageButton Source="water.png"/>
+
+                <Label Text="Comer"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <Frame Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   CornerRadius="30"
+                   BackgroundColor="White"
+                   BorderColor="Transparent"
+               HeightRequest="10"
+               Padding="0">
+                
+                <toolkit:MediaElement x:Name="MidiaAudio"
+                                      VerticalOptions="EndAndExpand"
+                                      IsVisible="false"
+                                      ShouldShowPlaybackControls="False"
+                                      Source="embed://comer.mp3"/>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>

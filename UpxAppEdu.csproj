@@ -49,6 +49,26 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\food.svg" />
+	  <MauiAsset Remove="Resources\Raw\phone.svg" />
+	  <MauiAsset Remove="Resources\Raw\water.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Raw\comer.mp3" />
+	  <None Remove="Resources\Raw\food.svg" />
+	  <None Remove="Resources\Raw\phone.svg" />
+	  <None Remove="Resources\Raw\water.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Raw\food.svg" />
+	  <MauiImage Include="Resources\Raw\phone.svg" />
+	  <MauiImage Include="Resources\Raw\water.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="1.0.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	</ItemGroup>
@@ -57,10 +77,16 @@
 	  <MauiXaml Update="View\AddItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\Configuracoes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Education.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Rotina.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\TelaInicial.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

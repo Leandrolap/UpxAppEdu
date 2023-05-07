@@ -35,7 +35,4 @@ public partial class Rotina : ContentPage
             });
         }
     }
-
-
-
 }

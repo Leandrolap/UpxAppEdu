@@ -8,6 +8,12 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        MainPage = new AppShell();
+        MainPage = new NavigationPage(new TelaInicial())
+        {
+            BarTextColor = Color.FromRgb(255, 255, 255),
+            BarBackgroundColor = Color.FromArgb("#6495ED")
+        };
+
+        //MainPage = new TelaInicial();
     }
 }
