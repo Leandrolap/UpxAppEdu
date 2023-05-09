@@ -8,12 +8,12 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        MainPage = new NavigationPage(new TelaInicial())
+        /*MainPage = new NavigationPage(new Login())
         {
             BarTextColor = Color.FromRgb(255, 255, 255),
             BarBackgroundColor = Color.FromArgb("#6495ED")
-        };
+        };*/
 
-        //MainPage = new TelaInicial();
+        MainPage = new Login();
     }
 }

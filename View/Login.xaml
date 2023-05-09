@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UpxAppEdu.View.Login"
+             Title="Login"
+             BackgroundColor="#BFEFFF"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid Margin="20,0,20,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <skia:SKLottieView Source="familyhug.json"
+                           RepeatCount="0"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           HorizontalOptions="Center"
+                           Grid.Row="0"
+                           Margin="0,40"/>
+
+        <Label Text="AutMais"
+               FontSize="20"
+               HorizontalOptions="Center"
+               TextColor="#6495ED"
+               TextTransform="Uppercase"
+               Grid.Row="1"
+               FontAttributes="Bold"/>
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Spacing="25"  Grid.Row="1">
+            <Frame CornerRadius="30" 
+                   BackgroundColor="White"
+                   BorderColor="Transparent"
+                   HeightRequest="50"
+                   Padding="0">
+                <Entry Placeholder="e-mail"
+                       PlaceholderColor="Gray"
+                       Keyboard="Email"
+                       TextColor="Black"
+                       Margin="15,0,0,0"
+                       VerticalOptions="Center"/>
+            </Frame>
+
+            <Frame CornerRadius="30" 
+                   BackgroundColor="White"
+                   BorderColor="Transparent"
+                   HeightRequest="50"
+                   Padding="0">
+                <Entry Placeholder="senha"
+                       PlaceholderColor="Gray"
+                       Keyboard="Default"
+                       IsPassword="True"
+                       TextColor="Black"
+                       Margin="15,0,0,0"
+                       VerticalOptions="Center"/>
+            </Frame>
+
+            <Button Text="Entrar"
+                    BackgroundColor="#6495ED"
+                    HorizontalOptions="Center"
+                    TextColor="White"
+                    WidthRequest="200"
+                    VerticalOptions="End"
+                    Clicked="BtnEntrar"
+                    Opacity="0.7"
+                    FontAttributes="Bold"/>
+
+            <Button Text="cadastrar"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    TextColor="#6495ED"
+                    VerticalOptions="End"
+                    Clicked="BtnCadastrar"
+                    FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
