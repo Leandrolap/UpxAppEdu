@@ -5,12 +5,13 @@
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <Grid Margin="25">
+        <Grid Margin="25" RowSpacing="20">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
@@ -23,6 +24,34 @@
                              HeightRequest="110"/>
 
                 <Label Text="Comunicação"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="0"
+                                 Spacing="10">
+
+                <ImageButton Source="song"
+                             Clicked="OnClickedComunicacao"
+                             HeightRequest="110"/>
+
+                <Label Text="Música"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="0"
+                                 Grid.Row="1"
+                                 Spacing="10">
+
+                <ImageButton Source="joystick"
+                             Clicked="OnClickedComunicacao"
+                             HeightRequest="110"/>
+
+                <Label Text="Jogos"
                        TextColor="Black"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"/>

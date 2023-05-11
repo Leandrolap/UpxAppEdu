@@ -51,7 +51,9 @@
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\comunication.svg" />
 	  <MauiAsset Remove="Resources\Raw\food.svg" />
+	  <MauiAsset Remove="Resources\Raw\joystick.svg" />
 	  <MauiAsset Remove="Resources\Raw\phone.svg" />
+	  <MauiAsset Remove="Resources\Raw\song.svg" />
 	  <MauiAsset Remove="Resources\Raw\water.svg" />
 	</ItemGroup>
 
@@ -61,15 +63,19 @@
 	  <None Remove="Resources\Raw\comunication.svg" />
 	  <None Remove="Resources\Raw\familyhug.json" />
 	  <None Remove="Resources\Raw\food.svg" />
+	  <None Remove="Resources\Raw\joystick.svg" />
 	  <None Remove="Resources\Raw\ligar.mp3" />
 	  <None Remove="Resources\Raw\phone.svg" />
+	  <None Remove="Resources\Raw\song.svg" />
 	  <None Remove="Resources\Raw\water.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiImage Include="Resources\Raw\comunication.svg" />
 	  <MauiImage Include="Resources\Raw\food.svg" />
+	  <MauiImage Include="Resources\Raw\joystick.svg" />
 	  <MauiImage Include="Resources\Raw\phone.svg" />
+	  <MauiImage Include="Resources\Raw\song.svg" />
 	  <MauiImage Include="Resources\Raw\water.svg" />
 	</ItemGroup>
 
