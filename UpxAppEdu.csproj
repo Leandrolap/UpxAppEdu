@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\comunication.svg" />
 	  <MauiAsset Remove="Resources\Raw\food.svg" />
 	  <MauiAsset Remove="Resources\Raw\phone.svg" />
 	  <MauiAsset Remove="Resources\Raw\water.svg" />
@@ -57,6 +58,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Raw\agua.mp3" />
 	  <None Remove="Resources\Raw\comer.mp3" />
+	  <None Remove="Resources\Raw\comunication.svg" />
 	  <None Remove="Resources\Raw\familyhug.json" />
 	  <None Remove="Resources\Raw\food.svg" />
 	  <None Remove="Resources\Raw\ligar.mp3" />
@@ -65,6 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Raw\comunication.svg" />
 	  <MauiImage Include="Resources\Raw\food.svg" />
 	  <MauiImage Include="Resources\Raw\phone.svg" />
 	  <MauiImage Include="Resources\Raw\water.svg" />
@@ -85,6 +88,9 @@
 	  <MauiXaml Update="View\CadastrarUsuario.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\Comunicacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Configuracoes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -92,6 +98,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Rotina.xaml">

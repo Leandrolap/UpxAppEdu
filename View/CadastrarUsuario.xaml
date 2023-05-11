@@ -71,9 +71,10 @@
 
 
                 <Button Text="CADASTRAR USUÁRIO" 
-                        Margin="20"
+                        Margin="15"
                         HeightRequest="50"
-                        FontSize="Medium"
+                        WidthRequest="250"
+                        FontSize="13"
                         BackgroundColor="#6495ED"
                         Opacity="0.7"
                         CornerRadius="10"

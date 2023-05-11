@@ -1,93 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="UpxAppEdu.View.TelaInicial"
-             BackgroundColor="#BFEFFF">
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Clicked="OnItemConfiguracoes" Text="Configurações">
-            <ToolbarItem.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android,UWP" Value="plus.png" />
-                </OnPlatform>
-            </ToolbarItem.IconImageSource>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
-
+             BackgroundColor="#BFEFFF"
+             NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <Grid RowSpacing="15"
-              ColumnSpacing="10"
-              Margin="20">
-            
+        <Grid Margin="25">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-
             <VerticalStackLayout Grid.Column="0"
-                                 Grid.Row="0">
-                
-                <ImageButton Source="food.png"
-                             Clicked="OnClikedFood"/>
+                                 Grid.Row="0"
+                                 Spacing="10">
 
-                <Label Text="Comer"
+                <ImageButton Source="comunication"
+                             Clicked="OnClickedComunicacao"
+                             HeightRequest="110"/>
+
+                <Label Text="Comunicação"
                        TextColor="Black"
-                       FontSize="20"
+                       FontAttributes="Bold"
                        HorizontalOptions="Center"/>
             </VerticalStackLayout>
-
-            <VerticalStackLayout Grid.Column="1"
-                                 Grid.Row="0">
-                
-                <ImageButton Source="phone.png"
-                             Clicked="OnClikedLigar"/>
-
-                <Label Text="Ligar"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"/>
-            </VerticalStackLayout>
-
-            <VerticalStackLayout Grid.Column="1"
-                                 Grid.Row="1">
-
-                <ImageButton Source="water.png"
-                             Clicked="OnClikedAgua"/>
-
-                <Label Text="Beber Água"
-                       TextColor="Black"
-                       FontSize="20"
-                       HorizontalOptions="Center"/>
-            </VerticalStackLayout>
-
-
-
-            <toolkit:MediaElement x:Name="MidiaAudio"
-                                  VerticalOptions="EndAndExpand"
-                                  IsVisible="false"
-                                  ShouldShowPlaybackControls="False"
-                                  Source="embed://comer.mp3"/>
-
-            <toolkit:MediaElement x:Name="MidiaAudio1"
-                                  VerticalOptions="EndAndExpand"
-                                  IsVisible="false"
-                                  ShouldShowPlaybackControls="False"
-                                  Source="embed://ligar.mp3"/>
-
-            <toolkit:MediaElement x:Name="MidiaAudio2"
-                                  VerticalOptions="EndAndExpand"
-                                  IsVisible="false"
-                                  ShouldShowPlaybackControls="False"
-                                  Source="embed://agua.mp3"/>
-
-
         </Grid>
     </ScrollView>
 </ContentPage>

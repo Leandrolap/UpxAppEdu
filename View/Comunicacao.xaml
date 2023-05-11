@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UpxAppEdu.View.Comunicacao"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Comunicacao"
+             BackgroundColor="#BFEFFF">
+
+    <ListView>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <VerticalStackLayout>
+                    <VerticalStackLayout>
+
+                        <ImageButton Source="food.png"
+                             Clicked="OnClikedFood"/>
+
+                        <Label Text="Comer"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="0">
+
+                        <ImageButton Source="phone.png"
+                             Clicked="OnClikedLigar"/>
+
+                        <Label Text="Ligar"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="1">
+
+                        <ImageButton Source="water.png"
+                             Clicked="OnClikedAgua"/>
+
+                        <Label Text="Beber Água"
+                       TextColor="Black"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+
+
+                    <toolkit:MediaElement x:Name="MidiaAudio"
+                                  VerticalOptions="EndAndExpand"
+                                  IsVisible="false"
+                                  ShouldShowPlaybackControls="False"
+                                  Source="embed://comer.mp3"/>
+
+                    <toolkit:MediaElement x:Name="MidiaAudio1"
+                                  VerticalOptions="EndAndExpand"
+                                  IsVisible="false"
+                                  ShouldShowPlaybackControls="False"
+                                  Source="embed://ligar.mp3"/>
+
+                    <toolkit:MediaElement x:Name="MidiaAudio2"
+                                  VerticalOptions="EndAndExpand"
+                                  IsVisible="false"
+                                  ShouldShowPlaybackControls="False"
+                                  Source="embed://agua.mp3"/>
+
+
+                </VerticalStackLayout>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
