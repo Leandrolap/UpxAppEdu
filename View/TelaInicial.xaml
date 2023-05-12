@@ -5,57 +5,115 @@
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <Grid Margin="25" RowSpacing="20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+        <VerticalStackLayout Padding="0">
 
-            <VerticalStackLayout Grid.Column="0"
+            <VerticalStackLayout Margin="25">
+                <Label Text="Olá"
+                       FontSize="70"
+                       FontAttributes="Bold"/>
+
+                <Label Text="Leandro"
+                       FontSize="35"
+                       FontAttributes="Bold"
+                       Margin="65,-20,0,0"/>
+            </VerticalStackLayout>
+
+
+            <Grid HorizontalOptions="CenterAndExpand" Margin="20,30,20,0" ColumnSpacing="45" RowSpacing="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <VerticalStackLayout Grid.Column="0"
                                  Grid.Row="0"
                                  Spacing="10">
 
-                <ImageButton Source="comunication"
+                    <ImageButton Source="comunication"
                              Clicked="OnClickedComunicacao"
                              HeightRequest="110"/>
 
-                <Label Text="Comunicação"
+                    <Label Text="Comunicação"
                        TextColor="Black"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"/>
-            </VerticalStackLayout>
+                </VerticalStackLayout>
 
-            <VerticalStackLayout Grid.Column="1"
+                <VerticalStackLayout Grid.Column="1"
                                  Grid.Row="0"
                                  Spacing="10">
 
-                <ImageButton Source="song"
-                             Clicked="OnClickedComunicacao"
+                    <ImageButton Source="song"
+                             Clicked="OnClickedMusic"
                              HeightRequest="110"/>
 
-                <Label Text="Música"
+                    <Label Text="Música"
                        TextColor="Black"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"/>
-            </VerticalStackLayout>
+                </VerticalStackLayout>
 
-            <VerticalStackLayout Grid.Column="0"
+                <VerticalStackLayout Grid.Column="0"
                                  Grid.Row="1"
                                  Spacing="10">
 
-                <ImageButton Source="joystick"
+                    <ImageButton Source="joystick"
                              Clicked="OnClickedComunicacao"
                              HeightRequest="110"/>
 
-                <Label Text="Jogos"
+                    <Label Text="Jogos"
                        TextColor="Black"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"/>
-            </VerticalStackLayout>
-        </Grid>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="1"
+                                 Spacing="10">
+
+                    <ImageButton Source="calendar"
+                             Clicked="OnClickAgenda"
+                             HeightRequest="110"/>
+
+                    <Label Text="Agenda"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="0"
+                                 Grid.Row="2"
+                                 Spacing="10">
+
+                    <ImageButton Source="todo.png"
+                             Clicked="OnClickRotina"
+                             HeightRequest="110"/>
+
+                    <Label Text="Rotina"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="2"
+                                 Spacing="10">
+
+                    <ImageButton Source="sobre.png"
+                             Clicked="OnClickSobre"
+                             HeightRequest="110"/>
+
+                    <Label Text="Sobre"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -14,4 +14,24 @@ public partial class TelaInicial : ContentPage
     {
         Navigation.PushModalAsync(new Comunicacao());
     }
+
+    private void OnClickSobre(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new Sobre());
+    }
+
+    private void OnClickRotina(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new Rotina());
+    }
+
+    private void OnClickAgenda(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new Agenda());
+    }
+
+    private void OnClickedMusic(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new Musica());
+    }
 }

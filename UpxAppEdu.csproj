@@ -49,16 +49,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\calendar.svg" />
 	  <MauiAsset Remove="Resources\Raw\comunication.svg" />
 	  <MauiAsset Remove="Resources\Raw\food.svg" />
 	  <MauiAsset Remove="Resources\Raw\joystick.svg" />
 	  <MauiAsset Remove="Resources\Raw\phone.svg" />
+	  <MauiAsset Remove="Resources\Raw\sobre.svg" />
 	  <MauiAsset Remove="Resources\Raw\song.svg" />
+	  <MauiAsset Remove="Resources\Raw\todo.svg" />
 	  <MauiAsset Remove="Resources\Raw\water.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\Raw\agua.mp3" />
+	  <None Remove="Resources\Raw\calendar.svg" />
 	  <None Remove="Resources\Raw\comer.mp3" />
 	  <None Remove="Resources\Raw\comunication.svg" />
 	  <None Remove="Resources\Raw\familyhug.json" />
@@ -66,16 +70,22 @@
 	  <None Remove="Resources\Raw\joystick.svg" />
 	  <None Remove="Resources\Raw\ligar.mp3" />
 	  <None Remove="Resources\Raw\phone.svg" />
+	  <None Remove="Resources\Raw\sobre.svg" />
 	  <None Remove="Resources\Raw\song.svg" />
+	  <None Remove="Resources\Raw\todo.svg" />
+	  <None Remove="Resources\Raw\toque01.mp3" />
 	  <None Remove="Resources\Raw\water.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Raw\calendar.svg" />
 	  <MauiImage Include="Resources\Raw\comunication.svg" />
 	  <MauiImage Include="Resources\Raw\food.svg" />
 	  <MauiImage Include="Resources\Raw\joystick.svg" />
 	  <MauiImage Include="Resources\Raw\phone.svg" />
+	  <MauiImage Include="Resources\Raw\sobre.svg" />
 	  <MauiImage Include="Resources\Raw\song.svg" />
+	  <MauiImage Include="Resources\Raw\todo.svg" />
 	  <MauiImage Include="Resources\Raw\water.svg" />
 	</ItemGroup>
 
@@ -89,6 +99,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="View\AddItem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Agenda.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\CadastrarUsuario.xaml">
@@ -106,10 +119,16 @@
 	  <MauiXaml Update="View\Login.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\Musica.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Rotina.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Sobre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\TelaInicial.xaml">
