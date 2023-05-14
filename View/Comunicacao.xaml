@@ -6,68 +6,68 @@
              Title="Comunicacao"
              BackgroundColor="#BFEFFF">
 
-    <ScrollView>
-        <VerticalStackLayout>
-            <HorizontalStackLayout>
-                <ImageButton Source="food.png"
-                             Clicked="OnClikedFood"
-                             HeightRequest="90"/>
-                
-                <Label Text="QUERO COMER"
+    <ListView>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <VerticalStackLayout>
+                    <VerticalStsackLayout>
+
+                        <ImageButton Source="food.png"
+                             Clicked="OnClikedFood"/>
+
+                        <Label Text="Comer"
                        TextColor="Black"
-                       FontSize="15"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontAttributes="Bold"/>
-                </HorizontalStackLayout>
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStsackLayout>
 
-            <HorizontalStackLayout>
-                <ImageButton Source="phone.png"
-                             Clicked="OnClikedLigar"
-                             HeightRequest="90"/>
-                
-                <Label Text="QUERO FAZER UMA LIGAÇÃO"
+                    <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="0">
+
+                        <ImageButton Source="phone.png"
+                             Clicked="OnClikedLigar"/>
+
+                        <Label Text="Ligar"
                        TextColor="Black"
-                       FontSize="15"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontAttributes="Bold"/>
-                </HorizontalStackLayout>
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
 
-            <HorizontalStackLayout>
-                <ImageButton Source="water.png"
-                             Clicked="OnClikedAgua"
-                             HeightRequest="90"/>
-                
-                <Label Text="QUERO BEBER ÁGUA"
+                    <VerticalStackLayout Grid.Column="1"
+                                 Grid.Row="1">
+
+                        <ImageButton Source="water.png"
+                             Clicked="OnClikedAgua"/>
+
+                        <Label Text="Beber Água"
                        TextColor="Black"
-                       FontSize="15"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontAttributes="Bold"/>
-                </HorizontalStackLayout>
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
 
 
 
-                <toolkit:MediaElement x:Name="MidiaAudio"
+                    <toolkit:MediaElement x:Name="MidiaAudio"
                                   VerticalOptions="EndAndExpand"
                                   IsVisible="false"
                                   ShouldShowPlaybackControls="False"
                                   Source="embed://comer.mp3"/>
 
-                <toolkit:MediaElement x:Name="MidiaAudio1"
+                    <toolkit:MediaElement x:Name="MidiaAudio1"
                                   VerticalOptions="EndAndExpand"
                                   IsVisible="false"
                                   ShouldShowPlaybackControls="False"
                                   Source="embed://ligar.mp3"/>
 
-                <toolkit:MediaElement x:Name="MidiaAudio2"
+                    <toolkit:MediaElement x:Name="MidiaAudio2"
                                   VerticalOptions="EndAndExpand"
                                   IsVisible="false"
                                   ShouldShowPlaybackControls="False"
                                   Source="embed://agua.mp3"/>
 
 
-            </VerticalStackLayout>
-    </ScrollView>
+                </VerticalStackLayout>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

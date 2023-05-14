@@ -95,6 +95,7 @@
 		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
 		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="XCalendar.Maui" Version="4.4.2" />
 	</ItemGroup>
 
 	<ItemGroup>
