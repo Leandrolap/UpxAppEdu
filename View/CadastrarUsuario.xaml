@@ -74,13 +74,13 @@
                         Margin="15"
                         HeightRequest="50"
                         WidthRequest="250"
-                        FontSize="13"
-                        BackgroundColor="#6495ED"
+                        BackgroundColor="#FFFF8C00"
                         Opacity="0.7"
                         CornerRadius="10"
                         TextColor="White"
-                        FontAttributes="Bold"
-                        Clicked="OnClikedCadastrar"/>
+                        Clicked="OnClikedCadastrar"
+                        FontFamily="MairyRegular"
+                        FontSize="25"/>
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

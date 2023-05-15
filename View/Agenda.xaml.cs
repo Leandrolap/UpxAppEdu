@@ -1,3 +1,5 @@
+using XCalendar.Core.Models;
+
 namespace UpxAppEdu.View;
 
 public partial class Agenda : ContentPage
@@ -6,6 +8,7 @@ public partial class Agenda : ContentPage
 	{
 		InitializeComponent();
 
-		DataAtual.Date = DateTime.Now;
-	}
+        BindingContext = new MainPageViewModel();
+        //DataAtual.Date = DateTime.Now;
+    }
 }

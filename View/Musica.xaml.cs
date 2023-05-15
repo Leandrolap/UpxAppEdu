@@ -11,10 +11,6 @@ public partial class Musica : ContentPage
 
     private void OnClikedMusic01(object sender, EventArgs e)
     {
-        MidiaAudio.Stop();
-        if (MidiaAudio.CurrentState == MediaElementState.Stopped || MidiaAudio.CurrentState == MediaElementState.Paused)
-        {
-            MidiaAudio.Play();
-        }
+       
     }
 }

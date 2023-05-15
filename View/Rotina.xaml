@@ -5,43 +5,89 @@
              Title="Rotina"
              BackgroundColor="#BFEFFF">
 
-   
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        
-        <ListView x:Name="listView"
-                  ItemSelected="OnListItemSelected"
-                  Grid.ColumnSpan="1"
-                  Grid.RowSpan="1">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout
-                        Margin="20,0,0,0"
-                        HorizontalOptions="FillAndExpand"
-                        Orientation="Horizontal">
-                            <Label HorizontalOptions="StartAndExpand" Text="{Binding Titulo}" />
-                            <Image
-                            HorizontalOptions="End"
-                            IsVisible="{Binding Feito}"
-                            Source="check.png" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
 
-        <Button Text="+" BackgroundColor="Black"
-                Grid.Column="1"
-                Grid.Row="1"
-                Clicked="OnItemAdded"
-                TextColor="White"/>
+    <Grid Margin="20,50">
+        <VerticalStackLayout Spacing="15">
+            <HorizontalStackLayout Spacing="15">
+                <Frame BackgroundColor="Transparent"
+                   BorderColor="#FF8C00"
+                   CornerRadius="50"
+                   HeightRequest="25"
+                   WidthRequest="25"/>
+
+                <Label Text="Fazer o dever para casa"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontFamily="MairyExtralight"
+                   VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15">
+                <Frame BackgroundColor="Transparent"
+                   BorderColor="#FF8C00"
+                   CornerRadius="50"
+                   HeightRequest="25"
+                   WidthRequest="25"/>
+
+                <Label Text="Tomar o remédio"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontFamily="MairyExtralight"
+                   VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15">
+                <Frame BackgroundColor="Transparent"
+                   BorderColor="#FF8C00"
+                   CornerRadius="50"
+                   HeightRequest="25"
+                   WidthRequest="25"/>
+
+                <Label Text="Estudar para a prova"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontFamily="MairyExtralight"
+                   VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15">
+                <Frame BackgroundColor="Transparent"
+                   BorderColor="#FF8C00"
+                   CornerRadius="50"
+                   HeightRequest="25"
+                   WidthRequest="25"/>
+
+                <Label Text="Ir ao aniversário da minha tia"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontFamily="MairyExtralight"
+                   VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="15">
+                <Frame BackgroundColor="Transparent"
+                   BorderColor="#FF8C00"
+                   CornerRadius="50"
+                   HeightRequest="25"
+                   WidthRequest="25"/>
+
+                <Label Text="Comprar lanche"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontFamily="MairyExtralight"
+                   VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <Button Text="+"
+                BackgroundColor="#FFFF8C00"
+                TextColor="White"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                HeightRequest="75"
+                WidthRequest="75"
+                CornerRadius="50"
+                FontSize="50"
+                Padding="0"/>
     </Grid>
 </ContentPage>

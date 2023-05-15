@@ -4,28 +4,71 @@
              x:Class="UpxAppEdu.View.Musica"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              BackgroundColor="#BFEFFF"
-             NavigationPage.HasNavigationBar="False">
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
-            <ImageButton Source="food.png"
-                             Clicked="OnClikedMusic01"
-                             HeightRequest="90"/>
+             NavigationPage.HasNavigationBar="True">
+    <VerticalStackLayout Margin="10" Spacing="5">
+        <Frame Padding="10" BorderColor="Transparent" HasShadow="True" BackgroundColor="#FFF1F1F1">
+            <HorizontalStackLayout>
+                <ImageButton Source="play.png"
+                             HeightRequest="80"/>
 
-            <Label Text="Música 01"
+                <Label Text="Música 01"
                        TextColor="Black"
-                       FontSize="15"
-                       HorizontalOptions="Center"
+                       FontSize="25"
                        VerticalOptions="Center"
-                       FontAttributes="Bold"/>
-        </HorizontalStackLayout>
-        
-        <toolkit:MediaElement x:Name="MidiaAudio"
-                                  VerticalOptions="EndAndExpand"
-                                  IsVisible="false"
-                                  ShouldShowPlaybackControls="False"
-                                  Source="embed://toque01.mp3"
-                              />
+                       FontFamily="MairyExtralight"/>
+            </HorizontalStackLayout>
+        </Frame>
 
-      
+        <Frame Padding="10" BorderColor="Transparent" HasShadow="True" BackgroundColor="#FFF1F1F1">
+            <HorizontalStackLayout>
+                <ImageButton Source="play.png"
+                             HeightRequest="80"/>
+
+                <Label Text="Música 02"
+                       TextColor="Black"
+                       FontSize="25"
+                       VerticalOptions="Center"
+                       FontFamily="MairyExtralight"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10" BorderColor="Transparent" HasShadow="True" BackgroundColor="#FFF1F1F1">
+            <HorizontalStackLayout>
+                <ImageButton Source="play.png"
+                             HeightRequest="80"/>
+
+                <Label Text="Música 03"
+                       TextColor="Black"
+                       FontSize="25"
+                       VerticalOptions="Center"
+                       FontFamily="MairyExtralight"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10" BorderColor="Transparent" HasShadow="True" BackgroundColor="#FFF1F1F1">
+            <HorizontalStackLayout>
+                <ImageButton Source="play.png"
+                             HeightRequest="80"/>
+
+                <Label Text="Música 04"
+                       TextColor="Black"
+                       FontSize="25"
+                       VerticalOptions="Center"
+                       FontFamily="MairyExtralight"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10" BorderColor="Transparent" HasShadow="True" BackgroundColor="#FFF1F1F1">
+            <HorizontalStackLayout>
+                <ImageButton Source="play.png"
+                             HeightRequest="80"/>
+
+                <Label Text="Música 05"
+                       TextColor="Black"
+                       FontSize="25"
+                       VerticalOptions="Center"
+                       FontFamily="MairyExtralight"/>
+            </HorizontalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

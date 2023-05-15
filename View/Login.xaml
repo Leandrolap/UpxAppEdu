@@ -22,12 +22,12 @@
                            Margin="0,40"/>
 
         <Label Text="AutMais"
-               FontSize="20"
+               FontSize="50"
                HorizontalOptions="Center"
                TextColor="#6495ED"
                TextTransform="Uppercase"
                Grid.Row="1"
-               FontAttributes="Bold"/>
+               FontFamily="MairyRegular"/>
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand" Spacing="25"  Grid.Row="1">
             <Frame CornerRadius="30" 
@@ -58,14 +58,16 @@
             </Frame>
 
             <Button Text="Entrar"
-                    BackgroundColor="#6495ED"
+                    BackgroundColor="#FFFF8C00"
                     HorizontalOptions="Center"
                     TextColor="White"
                     WidthRequest="200"
                     VerticalOptions="End"
                     Clicked="BtnEntrar"
                     Opacity="0.7"
-                    FontAttributes="Bold"/>
+                    FontAttributes="Bold"
+                    FontFamily="MairyRegular"
+                    FontSize="25"/>
 
             <Button Text="cadastrar"
                     BackgroundColor="Transparent"
@@ -73,7 +75,8 @@
                     TextColor="#6495ED"
                     VerticalOptions="End"
                     Clicked="BtnCadastrar"
-                    FontAttributes="Bold"/>
+                    FontFamily="MairyExtralight"
+                    FontSize="20"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

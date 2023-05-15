@@ -7,8 +7,18 @@
              NavigationPage.HasNavigationBar="False">
     <VerticalStackLayout>
         <xc:CalendarView
+           
             Days="{Binding MyCalendar.Days}"
             DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
             NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
+
+        <Label Text="Nada Marcado para hoje"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontFamily="MairyExtralight"
+               TextColor="Black"
+               Margin="0,50,0,0"
+               FontSize="20"/>
     </VerticalStackLayout>
+   
 </ContentPage>

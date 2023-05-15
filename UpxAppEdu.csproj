@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>UpxAppEdu</ApplicationTitle>
+		<ApplicationTitle>AutMais</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.upxappedu</ApplicationId>
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#6495ED" />
+		<MauiIcon Include="Resources\AppIcon\mente.svg" ForegroundFile="Resources\AppIcon\mente.svg" Color="#FFFF8C00"/>
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\family.svg" Color="#6495ED" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splashmente.svg" Color="#FFFF8C00" BaseSize="128,128"/>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -50,10 +50,14 @@
 
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\calendar.svg" />
+	  <MauiAsset Remove="Resources\Raw\chess.svg" />
 	  <MauiAsset Remove="Resources\Raw\comunication.svg" />
 	  <MauiAsset Remove="Resources\Raw\food.svg" />
 	  <MauiAsset Remove="Resources\Raw\joystick.svg" />
+	  <MauiAsset Remove="Resources\Raw\pacman.svg" />
 	  <MauiAsset Remove="Resources\Raw\phone.svg" />
+	  <MauiAsset Remove="Resources\Raw\play.svg" />
+	  <MauiAsset Remove="Resources\Raw\puzzle.svg" />
 	  <MauiAsset Remove="Resources\Raw\sobre.svg" />
 	  <MauiAsset Remove="Resources\Raw\song.svg" />
 	  <MauiAsset Remove="Resources\Raw\todo.svg" />
@@ -61,28 +65,36 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Raw\agua.mp3" />
+	  <None Remove="Resources\AppIcon\mente.svg" />
+	  <None Remove="Resources\Fonts\Mairy-Extralight.otf" />
+	  <None Remove="Resources\Fonts\Mairy-Regular.otf" />
 	  <None Remove="Resources\Raw\calendar.svg" />
-	  <None Remove="Resources\Raw\comer.mp3" />
+	  <None Remove="Resources\Raw\chess.svg" />
 	  <None Remove="Resources\Raw\comunication.svg" />
 	  <None Remove="Resources\Raw\familyhug.json" />
 	  <None Remove="Resources\Raw\food.svg" />
 	  <None Remove="Resources\Raw\joystick.svg" />
-	  <None Remove="Resources\Raw\ligar.mp3" />
+	  <None Remove="Resources\Raw\pacman.svg" />
 	  <None Remove="Resources\Raw\phone.svg" />
+	  <None Remove="Resources\Raw\play.svg" />
+	  <None Remove="Resources\Raw\puzzle.svg" />
 	  <None Remove="Resources\Raw\sobre.svg" />
 	  <None Remove="Resources\Raw\song.svg" />
 	  <None Remove="Resources\Raw\todo.svg" />
-	  <None Remove="Resources\Raw\toque01.mp3" />
 	  <None Remove="Resources\Raw\water.svg" />
+	  <None Remove="Resources\Splash\splashmente.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiImage Include="Resources\Raw\calendar.svg" />
+	  <MauiImage Include="Resources\Raw\chess.svg" />
 	  <MauiImage Include="Resources\Raw\comunication.svg" />
 	  <MauiImage Include="Resources\Raw\food.svg" />
 	  <MauiImage Include="Resources\Raw\joystick.svg" />
+	  <MauiImage Include="Resources\Raw\pacman.svg" />
 	  <MauiImage Include="Resources\Raw\phone.svg" />
+	  <MauiImage Include="Resources\Raw\play.svg" />
+	  <MauiImage Include="Resources\Raw\puzzle.svg" />
 	  <MauiImage Include="Resources\Raw\sobre.svg" />
 	  <MauiImage Include="Resources\Raw\song.svg" />
 	  <MauiImage Include="Resources\Raw\todo.svg" />
@@ -98,51 +110,18 @@
 		<PackageReference Include="XCalendar.Maui" Version="4.4.2" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <MauiXaml Update="View\AddItem.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Agenda.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\CadastrarUsuario.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Comunicacao.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Configuracoes.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Education.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Login.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Musica.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\NewPage1.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Rotina.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Sobre.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\TelaInicial.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	</ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
     <PackageReference Include="SQLitePCLRaw.core" Version="2.1.4" />
     <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.4" />
     <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <MauiXaml Update="View\Jogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
   </ItemGroup>
 
 </Project>

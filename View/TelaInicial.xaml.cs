@@ -12,7 +12,7 @@ public partial class TelaInicial : ContentPage
 
     private void OnClickedComunicacao(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new Comunicacao());
+        Navigation.PushModalAsync(new Interacao());
     }
 
     private void OnClickSobre(object sender, EventArgs e)
@@ -33,5 +33,10 @@ public partial class TelaInicial : ContentPage
     private void OnClickedMusic(object sender, EventArgs e)
     {
         Navigation.PushModalAsync(new Musica());
+    }
+
+    private void OnClickedGame(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new Jogo());
     }
 }

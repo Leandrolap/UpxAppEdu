@@ -16,8 +16,8 @@ public static class MauiProgram
             .UseSkiaSharp()
             .ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+				fonts.AddFont("Mairy-Extralight.otf", "MairyExtralight");
+				fonts.AddFont("Mairy-Regular.otf", "MairyRegular");
 			});
 
         builder.Services.AddSingleton(AudioManager.Current);

@@ -9,13 +9,15 @@
 
             <VerticalStackLayout Margin="25">
                 <Label Text="Olá"
-                       FontSize="70"
-                       FontAttributes="Bold"/>
+                       FontSize="90"
+                       FontFamily="MairyRegular"
+                       TextColor="#FF8C00"/>
 
                 <Label Text="Leandro"
                        FontSize="35"
-                       FontAttributes="Bold"
-                       Margin="65,-20,0,0"/>
+                       FontFamily="MairyExtralight"
+                       Margin="10,-20,0,0"
+                       TextColor="#FF8C00"/>
             </VerticalStackLayout>
 
 
@@ -40,7 +42,8 @@
 
                     <Label Text="Comunicação"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
@@ -54,7 +57,8 @@
 
                     <Label Text="Música"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
@@ -63,12 +67,13 @@
                                  Spacing="10">
 
                     <ImageButton Source="joystick"
-                             Clicked="OnClickedComunicacao"
+                             Clicked="OnClickedGame"
                              HeightRequest="110"/>
 
                     <Label Text="Jogos"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
@@ -82,7 +87,8 @@
 
                     <Label Text="Agenda"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
@@ -96,7 +102,8 @@
 
                     <Label Text="Rotina"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
 
@@ -110,7 +117,8 @@
 
                     <Label Text="Sobre"
                        TextColor="Black"
-                       FontAttributes="Bold"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
                        HorizontalOptions="Center"/>
                 </VerticalStackLayout>
             </Grid>
