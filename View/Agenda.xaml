@@ -9,8 +9,7 @@
         <xc:CalendarView
            
             Days="{Binding MyCalendar.Days}"
-            DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
-            NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
+            DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"/>
 
         <Label Text="Nada Marcado para hoje"
                HorizontalOptions="Center"

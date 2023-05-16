@@ -4,7 +4,19 @@
              x:Class="UpxAppEdu.View.Sobre"
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
-    <VerticalStackLayout>
-       
-    </VerticalStackLayout>
+    <Grid>
+        <VerticalStackLayout VerticalOptions="Center" Margin="50">
+            <Label Text="Obrigado por usar o AutMais, o aplicativo é voltado para pessoas com transtorno do espectro autismo."
+              FontSize="20"
+              TextColor="Black"
+              FontFamily="MairyExtralight"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center">
+            <Label Text="Ver.: 1.0"
+               FontSize="20"
+              TextColor="Black"
+              FontFamily="MairyExtralight"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>
