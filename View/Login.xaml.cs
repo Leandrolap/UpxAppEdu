@@ -1,3 +1,5 @@
+using UpxAppEdu.Service;
+
 namespace UpxAppEdu.View;
 
 public partial class Login : ContentPage
@@ -7,8 +9,15 @@ public partial class Login : ContentPage
 		InitializeComponent();
 	}
 
-    private void BtnEntrar(object sender, EventArgs e)
+    private async void BtnEntrar(object sender, EventArgs e)
     {
+        if (EntryEmail.Text != DBLocal.Email && EntrySenha.Text != DBLocal.Senha)
+        {
+            await Application.Current.MainPage.DisplayAlert("Atenção", "E-mail ou senha não conferem", "Ok");
+            return;
+        }
+        else
+
         App.Current.MainPage = new NavigationPage(new TelaInicial());
     }
 

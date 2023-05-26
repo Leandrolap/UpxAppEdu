@@ -13,10 +13,12 @@
         </VerticalStackLayout>
 
         <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center">
-            <Label Text="Ver.: 1.0"
-               FontSize="20"
-              TextColor="Black"
-              FontFamily="MairyExtralight"/>
+            <Button Text="Versão: 1.0"
+                    BackgroundColor="Transparent"
+                    TextColor="#FF8C00"
+                    Clicked="OnClickDev"
+                    FontFamily="MairyExtralight"
+                    FontSize="20"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

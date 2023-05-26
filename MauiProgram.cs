@@ -12,8 +12,10 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-            .UseMauiCommunityToolkitMediaElement()
-            .UseSkiaSharp()
+			.UseMauiCommunityToolkitMediaElement()
+			.UseMauiCommunityToolkit()
+			.UseSkiaSharp()
+
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("Mairy-Extralight.otf", "MairyExtralight");

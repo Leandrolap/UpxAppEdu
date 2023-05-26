@@ -13,20 +13,21 @@
                        FontFamily="MairyRegular"
                        TextColor="#FF8C00"/>
 
-                <Label Text="Leandro"
-                       FontSize="35"
+                <Label x:Name="LblNome"
+                       FontSize="25"
                        FontFamily="MairyExtralight"
                        Margin="10,-20,0,0"
                        TextColor="#FF8C00"/>
             </VerticalStackLayout>
 
 
-            <Grid HorizontalOptions="CenterAndExpand" Margin="20,30,20,0" ColumnSpacing="45" RowSpacing="40">
+            <Grid HorizontalOptions="CenterAndExpand" Margin="0,10,0,0" ColumnSpacing="45" RowSpacing="40">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -109,6 +110,21 @@
 
                 <VerticalStackLayout Grid.Column="1"
                                  Grid.Row="2"
+                                 Spacing="10">
+
+                    <ImageButton Source="profile.png"
+                             Clicked="OnClickProfile"
+                             HeightRequest="110"/>
+
+                    <Label Text="Perfil"
+                       TextColor="Black"
+                       FontFamily="MairyRegular"
+                           FontSize="25"
+                       HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="0"
+                                 Grid.Row="3"
                                  Spacing="10">
 
                     <ImageButton Source="sobre.png"

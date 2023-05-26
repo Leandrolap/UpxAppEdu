@@ -1,3 +1,5 @@
+using CommunityToolkit.Maui.Views;
+
 namespace UpxAppEdu.View;
 
 public partial class Sobre : ContentPage
@@ -6,4 +8,9 @@ public partial class Sobre : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnClickDev(object sender, EventArgs e)
+    {
+		this.ShowPopup(new PopupDev());
+    }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UpxAppEdu.View.PopupDev"
+       xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <Frame Margin="25">
+        <VerticalStackLayout VerticalOptions="Center">
+            <Label 
+                Text="Software desenvolvido por:"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                TextColor="Black"
+                FontFamily="MairyRegular"/>
+
+            <Label 
+                Text="Leandro Paiva"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                TextColor="Black"
+                FontFamily="MairyExtralight"/>
+
+            <Label 
+                Text="suporte_desenvolvimento@outlook.com"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Black"
+                FontFamily="MairyExtralight"/>
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup>

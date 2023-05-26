@@ -21,7 +21,8 @@
                        Placeholder="Nome Completo"
                        TextColor="Black"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                          x:Name="EntryNome"/>
                 </Frame>
 
                 <Frame CornerRadius="30" 
@@ -36,7 +37,8 @@
                        Placeholder="Email"
                        TextColor="Black"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                        x:Name="EntryEmail"/>
                 </Frame>
 
                 <Frame CornerRadius="30" 
@@ -51,7 +53,8 @@
                        TextColor="#292929"
                        IsPassword="True"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                           x:Name="EntrySenha"/>
                 </Frame>
 
                 <Frame CornerRadius="30" 
@@ -66,7 +69,8 @@
                        TextColor="#292929"
                        IsPassword="True"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                           x:Name="EntryCSenha"/>
                 </Frame>
 
 

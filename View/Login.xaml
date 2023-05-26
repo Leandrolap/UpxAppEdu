@@ -40,7 +40,8 @@
                        Keyboard="Email"
                        TextColor="Black"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       x:Name="EntryEmail"/>
             </Frame>
 
             <Frame CornerRadius="30" 
@@ -54,7 +55,8 @@
                        IsPassword="True"
                        TextColor="Black"
                        Margin="15,0,0,0"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       x:Name="EntrySenha"/>
             </Frame>
 
             <Button Text="Entrar"
