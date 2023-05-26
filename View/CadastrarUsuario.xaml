@@ -15,8 +15,7 @@
                        HeightRequest="50"
                        Padding="0">
 
-                    <Entry Keyboard="Text" 
-                       ReturnType="Next" 
+                    <Entry Keyboard="Text"  
                        FontSize="15"
                        Placeholder="Nome Completo"
                        TextColor="Black"
@@ -31,8 +30,7 @@
                        HeightRequest="50"
                        Padding="0">
                     <Entry  
-                       Keyboard="Email" 
-                       ReturnType="Next" 
+                       Keyboard="Email"  
                        FontSize="15"
                        Placeholder="Email"
                        TextColor="Black"
@@ -46,8 +44,7 @@
                        BorderColor="Transparent"
                        HeightRequest="50"
                        Padding="0">
-                    <Entry Keyboard="Default" 
-                       ReturnType="Next" 
+                    <Entry Keyboard="Default"  
                        FontSize="15"
                        Placeholder="Senha"
                        TextColor="#292929"
@@ -62,8 +59,7 @@
                        BorderColor="Transparent"
                        HeightRequest="50"
                        Padding="0">
-                    <Entry Keyboard="Default" 
-                       ReturnType="Next" 
+                    <Entry Keyboard="Default"
                        FontSize="15"
                        Placeholder="Confirmar Senha"
                        TextColor="#292929"

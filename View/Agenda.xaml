@@ -6,10 +6,10 @@
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
     <VerticalStackLayout>
-        <xc:CalendarView
-           
-            Days="{Binding MyCalendar.Days}"
-            DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"/>
+        <xc:CalendarView Days="{Binding MyCalendar.Days}"
+                         DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
+                         NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
+
 
         <Label Text="Nada Marcado para hoje"
                HorizontalOptions="Center"

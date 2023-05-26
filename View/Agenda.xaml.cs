@@ -11,4 +11,6 @@ public partial class Agenda : ContentPage
         BindingContext = new MainPageViewModel();
         //DataAtual.Date = DateTime.Now;
     }
+
+    public Calendar<CalendarDay> MyCalendar { get; set; } = new Calendar<CalendarDay>();
 }
