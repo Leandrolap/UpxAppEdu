@@ -1,23 +1,138 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xc="clr-namespace:XCalendar.Maui.Views;assembly=XCalendar.Maui"
              x:Class="UpxAppEdu.View.Agenda"
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
-    <VerticalStackLayout>
-        <xc:CalendarView Days="{Binding MyCalendar.Days}"
-                         DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
-                         NavigatedDate="{Binding MyCalendar.NavigatedDate}"/>
+    <VerticalStackLayout Margin="25">
+        <Label Text="Selecione uma data:"
+               HorizontalOptions="Start"
+               FontSize="25"
+               FontFamily="MairyRegular"
+               TextColor="#FF8C00"/>
+        
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+            <DatePicker x:Name="DtAgenda"
+                        TextColor="Black"
+                        FontSize="25"
+                        FontAttributes="Bold"
+                        FontFamily="MairyExtralight"
+                        WidthRequest="150"/>
+            
+            <Button x:Name="BtnProcurar"
+                    HorizontalOptions="End"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Text="Ir"
+                    TextColor="#FF8C00"
+                    Padding="0"/>
+        </HorizontalStackLayout>
 
+        <VerticalStackLayout Margin="0,50,0,0" Spacing="15">
+            <Frame BorderColor="Transparent"
+                   BackgroundColor="#FF8C00"
+                   HeightRequest="130"
+                   Padding="0">
+                <VerticalStackLayout BackgroundColor="White" Margin="15,0,0,0">
+                    <Label x:Name="LData"
+                           Text="08:00"
+                           FontFamily="MairyRegular"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
 
-        <Label Text="Nada Marcado para hoje"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               FontFamily="MairyExtralight"
-               TextColor="Black"
-               Margin="0,50,0,0"
-               FontSize="20"/>
+                    <Label x:Name="LTitulo"
+                           Text="Prova de Português"
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
+
+                    <Label x:Name="LSTitulo"
+                           Text="Estudar as duas últimas matérias passadas."
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="15"
+                           Margin="15,5"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="Transparent"
+                   BackgroundColor="#FF8C00"
+                   HeightRequest="130"
+                   Padding="0">
+                <VerticalStackLayout BackgroundColor="White" Margin="15,0,0,0">
+                    <Label 
+                           Text="14:00"
+                           FontFamily="MairyRegular"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
+
+                    <Label 
+                           Text="Consulta com médico"
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
+
+                    <Label 
+                           Text="Consulta com o clínico geral"
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="15"
+                           Margin="15,5"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="Transparent"
+                   BackgroundColor="#FF8C00"
+                   HeightRequest="130"
+                   Padding="0">
+                <VerticalStackLayout BackgroundColor="White" Margin="15,0,0,0">
+                    <Label 
+                           Text="19:00"
+                           FontFamily="MairyRegular"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
+
+                    <Label 
+                           Text="Aniversário da Ana"
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="25"
+                           Margin="15,5"/>
+
+                    <Label 
+                           Text="Levar um presente"
+                           FontFamily="MairyExtralight"
+                           HorizontalOptions="Start"
+                           TextColor="Black"
+                           FontSize="15"
+                           Margin="15,5"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+
+        <Button Text="+"
+                BackgroundColor="#FFFF8C00"
+                TextColor="White"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                HeightRequest="75"
+                WidthRequest="75"
+                CornerRadius="50"
+                FontSize="50"
+                Padding="0"/>
     </VerticalStackLayout>
    
 </ContentPage>

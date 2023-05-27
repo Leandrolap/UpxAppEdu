@@ -1,7 +1,4 @@
-﻿using CommunityToolkit.Maui;
-using Microsoft.Extensions.Logging;
-using Plugin.Maui.Audio;
-using SkiaSharp.Views.Maui.Controls.Hosting;
+﻿using Microsoft.Extensions.Logging;
 
 namespace UpxAppEdu;
 
@@ -12,17 +9,12 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseMauiCommunityToolkitMediaElement()
-			.UseMauiCommunityToolkit()
-			.UseSkiaSharp()
-
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("Mairy-Extralight.otf", "MairyExtralight");
 				fonts.AddFont("Mairy-Regular.otf", "MairyRegular");
 			});
 
-        builder.Services.AddSingleton(AudioManager.Current);
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
