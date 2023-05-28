@@ -13,4 +13,9 @@ public partial class Sobre : ContentPage
     {
 		this.ShowPopup(new PopupDev());
     }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+    }
 }

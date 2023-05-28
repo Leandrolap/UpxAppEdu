@@ -5,6 +5,12 @@
              BackgroundColor="#BFEFFF"
              NavigationPage.HasNavigationBar="False">
     <Grid>
+        <Image Source="mente.png"
+               HorizontalOptions="Center"
+               HeightRequest="150"
+               VerticalOptions="Start"
+               Margin="0,50,0,0"/>
+        
         <VerticalStackLayout VerticalOptions="Center" Margin="50">
             <Label Text="Obrigado por usar o AutMais, o aplicativo é voltado para pessoas com transtorno do espectro autismo."
               FontSize="20"

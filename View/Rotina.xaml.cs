@@ -1,5 +1,4 @@
-using UpxAppEdu.Data;
-using UpxAppEdu.Model;
+
 
 namespace UpxAppEdu.View;
 

@@ -71,18 +71,27 @@
 
 	<PropertyGroup>
 	  <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <Title>AutMais</Title>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
 	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
 	  <DebugSymbols>True</DebugSymbols>
 	  <AndroidPackageFormat>apk</AndroidPackageFormat>
-	  <Optimize>False</Optimize>
+	  <Optimize>True</Optimize>
+	  <Debugger>Xamarin</Debugger>
+	  <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+	  <ApplicationId>com.AutMais.upxappedu</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
 	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
 	  <DebugSymbols>True</DebugSymbols>
+	  <Debugger>Xamarin</Debugger>
+	  <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+	  <Optimize>True</Optimize>
+	  <ApplicationId>com.AutMais.upxappedu</ApplicationId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -93,7 +102,7 @@
 		<MauiSplashScreen Include="Resources\Splash\splashmente.svg" Color="#FFFF8C00" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" BaseSize="168,208"/>
+		<MauiImage Include="Resources\Images\*" BaseSize="168,208" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
@@ -109,6 +118,7 @@
 	  <MauiAsset Remove="Resources\Raw\comunication.svg" />
 	  <MauiAsset Remove="Resources\Raw\food.svg" />
 	  <MauiAsset Remove="Resources\Raw\joystick.svg" />
+	  <MauiAsset Remove="Resources\Raw\mente.svg" />
 	  <MauiAsset Remove="Resources\Raw\pacman.svg" />
 	  <MauiAsset Remove="Resources\Raw\phone.svg" />
 	  <MauiAsset Remove="Resources\Raw\play.svg" />
@@ -130,6 +140,7 @@
 	  <None Remove="Resources\Raw\familyhug.json" />
 	  <None Remove="Resources\Raw\food.svg" />
 	  <None Remove="Resources\Raw\joystick.svg" />
+	  <None Remove="Resources\Raw\mente.svg" />
 	  <None Remove="Resources\Raw\pacman.svg" />
 	  <None Remove="Resources\Raw\phone.svg" />
 	  <None Remove="Resources\Raw\play.svg" />
@@ -148,6 +159,7 @@
 	  <MauiImage Include="Resources\Raw\comunication.svg" />
 	  <MauiImage Include="Resources\Raw\food.svg" />
 	  <MauiImage Include="Resources\Raw\joystick.svg" />
+	  <MauiImage Include="Resources\Raw\mente.svg" />
 	  <MauiImage Include="Resources\Raw\pacman.svg" />
 	  <MauiImage Include="Resources\Raw\phone.svg" />
 	  <MauiImage Include="Resources\Raw\play.svg" />
@@ -163,17 +175,9 @@
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="NuGet.Configuration" Version="6.6.0" />
-		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-		<PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
+		<PackageReference Include="Xam.Plugins.Settings" Version="5.0.0-beta" />
 	</ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-    <PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
-    <PackageReference Include="SQLitePCLRaw.core" Version="2.1.5" />
-    <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.5" />
-    <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.5" />
-  </ItemGroup>
 
   <ItemGroup>
     <MauiXaml Update="View\Jogo.xaml">
@@ -185,6 +189,10 @@
     <MauiXaml Update="View\PopupDev.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>
